@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Schrott</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="#" th:action="@{/address}" th:object="${address}" method="post">
+    <p>Name <input type="text" th:field="*{name}" /></p>
+    <p>Zip <input type="text" th:field="*{zip}" /> </p>
+    <input type="submit"/>
+</form>
+
+
+</body>
+</html>

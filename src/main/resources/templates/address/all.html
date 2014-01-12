@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Schrott</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+
+<table th:each="a : ${addresses}">
+    <tr>
+        <td th:text="${a.name}"></td>
+        <td><a th:href="@{/delete(id=${a.id})}">delete</a>
+        </td>
+    </tr>
+</table>
+
+
+<a href="/newaddress">New</a>
+
+
+</body>
+</html>
